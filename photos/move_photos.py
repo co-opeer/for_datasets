@@ -3,7 +3,13 @@ import shutil
 import random
 import string
 
-
+"""
+A function that moves files from the source directory to the destination directory.
+It retrieves a list of files in the source directory, then iterates through each file,
+checking if a file with the same name already exists in the destination directory.
+If the file exists, it generates a new name and moves the file with the new name.
+If the file does not exist, it simply moves the file to the destination directory.
+"""
 def move_files(source_dir, destination_dir):
     # Отримання списку файлів у директорії source_dir
     files = os.listdir(source_dir)

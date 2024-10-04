@@ -4,6 +4,10 @@ from PIL import Image
 import numpy as np
 import tensorflow as tf
 
+"""
+A function that saves an XML file with annotation information.
+It takes in parameters like folder, filename, path, width, height, depth, objects, and output_dir to create the XML structure and write it to a file.
+"""
 # Функція для збереження XML файлу
 def save_xml(folder, filename, path, width, height, depth, objects, output_dir):
     annotation = ET.Element('annotation', verified="yes")

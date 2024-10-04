@@ -1,7 +1,15 @@
 import os
 from PIL import Image
 
+"""
+Creates a dictionary to store the count of images with different resolutions.
 
+Parameters:
+directory (str): The path to the directory containing the images.
+
+Returns:
+dict: A dictionary with the count of images for each resolution.
+"""
 def count_images_by_resolution(directory):
     # Створюємо словник для зберігання кількості зображень з різними розмірами
     resolution_counts = {}
@@ -29,7 +37,7 @@ def count_images_by_resolution(directory):
 
 
 # Використання функції
-directory = r"C:\Users\PC\PycharmProjects\3D_model_car_object_detection\json3d\norm_img"
+directory = r"C:\Users\PC\OneDrive\Робочий стіл\photo for dataset\cars"
 result = count_images_by_resolution(directory)
 
 # Виводимо результат

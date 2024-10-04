@@ -1,5 +1,13 @@
 import os
 
+"""
+A function that deletes all files in the specified directory.
+Parameters:
+directory_path (str): The path to the directory containing the files to be deleted.
+Returns:
+None
+"""
+
 def delete_files_in_directory(directory_path):
     # Отримуємо список файлів у директорії
     files = os.listdir(directory_path)
